@@ -21,6 +21,7 @@
   outline: none !important;
   box-shadow: none !important;
 
+  --urlbar-height: 40.00px !important;
 }
 
 

@@ -25,8 +25,8 @@
 #pageActionButton { display: none !important; }
 
 #PanelUI-menu-button { padding: 0px !important; }
-#PanelUI-menu-button .toolbarbutton-icon { width: 1px !important; }
-#PanelUI-menu-button .toolbarbutton-badge-stack { padding: 0px !important; }
+#/* PanelUI-menu-button .toolbarbutton-icon { width: 1px !important; }
+#PanelUI-menu-button .toolbarbutton-badge-stack { padding: 0px !important; } */
 
 
 
@@ -69,7 +69,7 @@
   /*  Width of the URL Bar for the Oneline layout
    *  If enabled the max-width is applied on focus
    *  otherwise the URL Bar will always be it's min-width
-   */ --uc-urlbar-min-width: 35vw;
+   */ --uc-urlbar-min-width: 25vw;
       --uc-urlbar-max-width: 35vw;
 
   /*  Position of the URL Bar
@@ -81,17 +81,17 @@
   /*  Firefox can be a little wonky with the vertical
    *  URL Bar placement. Change this variable to adapt
    *  to this when necessary.
-   */ --uc-urlbar-top-spacing: 1px;
+   */ --uc-urlbar-top-spacing: 0px;
 
 }
 
 
 /* Disable the Navigation Buttons */
-#back-button,
+/*#back-button,*/
 #forward-button { display: none !important; }
 
 /* Disables the Tracking Protection Shield */
-/* #tracking-protection-icon-container { display: none !important; } */
+#tracking-protection-icon-container { display: none !important; }
 
 /* Encryption and Permissions icons */
   /* Only hides permission items */
@@ -106,9 +106,10 @@
 #urlbar-go-button { display: none !important; }
 
 /* Hides the Extensions Menu Icon */
-#unified-extensions-button { display: none !important; }
+/* #unified-extensions-button { display: none !important; } */
 
-
+/* Hide the bookmark icon in the URL bar */
+#star-button-box { display:none !important; }
 
 
 
@@ -121,9 +122,11 @@
 
   /*  Allow tabs to have dynamic widths based on
    *  the Tab Bars maximum width
-   */ --uc-active-tab-width:   clamp(100px, 30vw, 300px);
-      --uc-inactive-tab-width: clamp(100px, 20vw, 200px);
+   */ --uc-active-tab-width:   clamp(100px, 20vw, 250px);
+      --uc-inactive-tab-width: clamp(100px, 20vw, 250px);
 
+  /* Color of the active tab
+   */ --uc-tab-color: #2f3335;
 
   /*  Enable this to always show the Tab Close button
    *  possible values:

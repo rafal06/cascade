@@ -151,5 +151,16 @@
 
 /* selected tab colour fix*/
 .tabbrowser-tab[selected] .tab-content {
-  background-color: var(--uc-highlight-colour) !important;
+  background-color: var(--uc-tab-color) !important;
+}
+
+/* Make the tabs full height of the title bar */
+#TabsToolbar-customization-target {
+  height: 100%;
+}
+.tab-background {
+  --tab-block-margin: 0;
+}
+.tabbrowser-tab {
+  padding: 0 !important;
 }
